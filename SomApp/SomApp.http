@@ -1,0 +1,6 @@
+@SomApp_HostAddress = http://localhost:5119
+
+GET {{SomApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

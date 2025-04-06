@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SomApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec9ad7ba37e32566bb5406431fb76e5d379e18be")]
 [assembly: System.Reflection.AssemblyProductAttribute("SomApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SomApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

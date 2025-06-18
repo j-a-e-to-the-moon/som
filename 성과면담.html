@@ -65,12 +65,12 @@
         }
 
         .container {
-            max-width: 1400px;
-            width: 100%;
+            max-width: 1600px;
+            width: 95%;
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(20px);
             border-radius: 20px;
-            padding: 60px 40px;
+            padding: 50px 50px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
             text-align: center;
@@ -111,15 +111,15 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
             margin-top: 40px;
         }
 
         .grid-2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            gap: 50px;
             margin-top: 40px;
         }
 
@@ -166,8 +166,8 @@
 
         .stats-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
             margin: 40px 0;
         }
 
@@ -427,12 +427,17 @@
             h2 { font-size: 2.5rem; }
             h3 { font-size: 1.8rem; }
             .subtitle { font-size: 1.4rem; }
-            .container { padding: 40px 20px; }
+            .container { padding: 40px 20px; width: 90%; }
             .grid, .grid-2 { grid-template-columns: 1fr; }
             .stats-container { grid-template-columns: 1fr; }
             .card p, .card li { font-size: 1.1rem; }
             .stat-number { font-size: 2.8rem; }
             .stat-label { font-size: 1.1rem; }
+        }
+
+        @media (max-width: 1024px) {
+            .grid { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
+            .container { padding: 40px 30px; }
         }
     </style>
 </head>
@@ -652,37 +657,36 @@
         <div class="container">
             <h2>II. 제안사항 - 조기승진</h2>
             
-            <div class="timeline fade-in">
-                <div class="timeline-item">
+            <div class="timeline fade-in" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 30px 0;">
+                <div class="timeline-item" style="margin: 10px 0;">
                     <h4>🤝 다양한 이해관계자와의 협업</h4>
                     <p>시니어백엔드 엔지니어, 프론트 개발자, 디자이너, 현업 회계사, DTI 담당자들과 원활한 커뮤니케이션 수행</p>
                 </div>
                 
-                <div class="timeline-item">
+                <div class="timeline-item" style="margin: 10px 0;">
                     <h4>📋 체계적인 보고 및 승인 체계</h4>
                     <p>담당 파트너에게 적시에 보고하고 컨펌을 받아 프로젝트 진행</p>
                 </div>
                 
-                <div class="timeline-item">
+                <div class="timeline-item" style="margin: 10px 0;">
                     <h4>👥 팀 리더십 발휘</h4>
                     <p>Staff 회계사들을 활용하여 시연 자료 제작 및 테스트 수행</p>
                 </div>
                 
-                <div class="timeline-item">
+                <div class="timeline-item" style="margin: 10px 0;">
                     <h4>💡 창조적 업무 주도</h4>
                     <p>창조적이고 협업이 필요한 업무를 주도적으로 수행</p>
                 </div>
             </div>
 
-            <div class="proposal-section fade-in">
-                <div class="proposal-item" style="border-left-color: #ff6b6b;">
+            <div class="proposal-section fade-in" style="margin: 20px 0;">
+                <div class="proposal-item" style="border-left-color: #ff6b6b; margin: 10px 0; padding: 15px;">
                     <h4>🎯 현 직급의 한계</h4>
-                    <p><strong>Staff 회계사</strong> 직급으로는 업무 진행에 적절하지 않음</p>
-                    <p>최소 <strong>Manager 이상</strong>이 되어야 효과적인 업무 수행 가능</p>
+                    <p><strong>Staff 회계사</strong> 직급으로는 업무 진행에 적절하지 않음 → 최소 <strong>Manager 이상</strong>이 되어야 효과적인 업무 수행 가능</p>
                 </div>
             </div>
 
-            <div class="stat-card fade-in" style="background: rgba(255, 107, 107, 0.2);">
+            <div class="stat-card fade-in" style="background: rgba(255, 107, 107, 0.2); margin-top: 20px;">
                 <span class="stat-number">2025년 1월</span>
                 <p class="stat-label">조기승진 제안</p>
             </div>
